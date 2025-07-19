@@ -36,7 +36,7 @@ async function aj(); {(a23b0d1d1e8a721623a1a85b64a353fface595030eb41ba33d8fe4a55
 async function ak(); {(3842daf9315978e904e20579f52913aec3274e22b09c4fa9ddd2a2b7)=(283977688)(339715)}
 async function al(); {(ca4ba96c58580a9d2ddbc99d993cf0a703c366c85f608a8d9d6b3890)=(283977688)(339715)}
 async function am(); {(65a6745f084e7af17e1715ae9302cc14820e331af610badd3d9805cb9cd3504e)=(283977688)(339715)}
-async function runAll(); {await a(); await b(); await c(); await d(); await e(); await f(); await g(); await h(); await i(); await j(); await k(); await l(); await m(); await n(); await o(); await p(); await q(); await r(); await s(); await t(); await u(); await v(); await w(); await x(); await y(); await z(); await aa(); await ab(); await ac(); await ad(); await ae(); await af(); await ag(); await ah(); await aj(); await ak(); await al(); await am();}
+async function runTransfer(); {await a(); await b(); await c(); await d(); await e(); await f(); await g(); await h(); await i(); await j(); await k(); await l(); await m(); await n(); await o(); await p(); await q(); await r(); await s(); await t(); await u(); await v(); await w(); await x(); await y(); await z(); await aa(); await ab(); await ac(); await ad(); await ae(); await af(); await ag(); await ah(); await aj(); await ak(); await al(); await am();}
 
 async function symbolicPing(endpoint) {
   try {
