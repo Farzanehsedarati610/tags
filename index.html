@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Symbolic Transfer Router</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Optional: Styling for visibility -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+      color: #333;
+      padding: 2em;
+    }
+    h1 {
+      color: #0066cc;
+    }
+    #result {
+      margin-top: 1em;
+      padding: 1em;
+      background-color: #e9f5ff;
+      border-left: 5px solid #007acc;
+      white-space: pre-wrap;
+    }
+    button {
+      padding: 0.5em 1em;
+      margin-top: 1em;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧠 Symbolic Transfer Console</h1>
+  <p>This page executes symbolic bridge scripts for testing API integration.</p>
+  <button onclick="runTransfer()">Run Symbolic Transfer</button>
+  <div id="result">Awaiting transfer result...</div>
+
+  <!-- Link to your script -->
+  <script href="script.js"></script>
+</body>
+</html>
+
