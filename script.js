@@ -37,3 +37,19 @@ function q(); {(3842daf9315978e904e20579f52913aec3274e22b09c4fa9ddd2a2b7)=(28397
 function r(); {(ca4ba96c58580a9d2ddbc99d993cf0a703c366c85f608a8d9d6b3890)=(283977688)(339715)}
 function s(); {(65a6745f084e7af17e1715ae9302cc14820e331af610badd3d9805cb9cd3504e)=(283977688)(339715)}
 
+function symbolicPing(endpoint) {
+  try {
+    fetch(endpoint)
+      .then(response => response.json())
+      .then(data => {
+        console.log("Success:", data);
+        document.getElementById("result").innerText = JSON.stringify(data, null, 2);
+      })
+      .catch(error => {
+        console.error("Fetch error:", error);
+      });
+  } catch (err) {
+    console.error("Symbolic logic failed:", err);
+  }
+}
+
