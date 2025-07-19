@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta> charset="UTF-8">
-  <title>Symbolic Transfer Router</title>
-  <meta> name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Optional: Styling for visibility -->
+  <meta charset="UTF-8" />
+  <title>Symbolic Transfer Runner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fafafa;
-      color: #333;
+      font-family: monospace;
       padding: 2em;
+      background: #111;
+      color: #00ff99;
     }
     h1 {
-      color: #0066cc;
-    }
-    #result {
-      margin-top: 1em;
-      padding: 1em;
-      background-color: #e9f5ff;
-      border-left: 5px solid #007acc;
-      white-space: pre-wrap;
+      color: #00ffff;
     }
     button {
       padding: 0.5em 1em;
       margin-top: 1em;
-      background-color: #007acc;
-      color: white;
+      background-color: #00ff99;
+      color: #111;
       border: none;
+      font-size: 1em;
       cursor: pointer;
+    }
+    #log {
+      margin-top: 2em;
+      white-space: pre-wrap;
+      background: #222;
+      padding: 1em;
+      border-left: 4px solid #00ffff;
     }
   </style>
 </head>
 <body>
-  <h1>🧠 Symbolic Transfer Console</h1>
-  <p>This page executes symbolic bridge scripts for testing API integration.</p>
-  <button onclick="runTransfer()">Run Symbolic Transfer</button>
-  <div> id="result">Awaiting transfer result...</div>
+  <h1>🧠 Symbolic Routing Console</h1>
+  <button onclick="launchSymbolic()">Run All Transfers</button>
+  <div id="log">📡 Status: Waiting for launch...</div>
 
-  <!-- Link to your script -->
-href="script.js"
-src="script.js"
-  <script href="script.js"></script>
+  <script src="script.js"></script>
+  <script>
+    async function launchSymbolic() {
+      document.getElementById("log").innerText = "🚀 Launching symbolic runAll()...";
+      try {
+        await runAll(); // This calls your full transfer chain
+        document.getElementById("log").innerText += "\n✅ All symbolic transfers complete.";
+      } catch (e) {
+        document.getElementById("log").innerText += `\n❌ Error: ${e}`;
+      }
+    }
+  </script>
 </body>
 </html>
 
